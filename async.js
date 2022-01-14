@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 // sind promises das aufstückeln der async-callback variante?
 
+// callbacks
 const asyncFunc = (callback) => {
   setTimeout(() => callback("hello world"), 500);
 };
