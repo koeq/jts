@@ -19,8 +19,9 @@ const url = "https://api2.binance.com/api/v3/ticker/24hr";
 const res = fetch(url);
 res
   .then((res) => res.json())
-  .then((obj) => obj())
-  // .then((result) => console.log(result))
+  // throws error
+  // .then((obj) => obj())
+  .then((result) => console.log(result))
   .catch((err) => console.log({ err }));
 
 // await
